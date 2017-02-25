@@ -1,0 +1,87 @@
+body{
+  background:#85e9be;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans;
+
+}
+a:hover{
+  color:#41A7FF;
+}
+.con{
+  border-radius: 5px;
+  width: 400px;
+  height: 340px;
+  background: #F8F8FF;
+  margin: auto;
+  margin-top: 100px;
+  padding-top: 50px;
+
+}
+
+.login{
+  margin: auto;
+  position: relative;
+  width: 80%;
+  height: 280px;
+}
+.login img{
+  width: 60%;
+  height: 50px;
+  margin: auto;
+  display: block;
+  margin-bottom: 25px;
+}
+input{
+  width: 92%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: rgba(76, 175, 80, 0.1);
+  padding: 10px;
+  color:#696969;
+  text-shadow: 1px;
+  border-left: 6px solid #6F984C;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+}
+.btn{
+  margin-top: 20px;
+  zoom:1;
+  padding: 6px 0% 6px;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  background-color:  #7BCCAC;
+  font-size: 19px;
+  border-radius: 2px;
+  border: none;
+  width: 100%;
+
+}
+
+
+.btn:hover {
+  color: #f2ebf0;
+  background-color:#81fcad;}
+
+
+input[type=text]:focus{
+  border-left: 6px solid #95eb00;
+
+}
+input[type=password]:focus{
+  border-left: 6px solid #95eb00;
+}
+input[type=button]:focus{
+}
+.login-extra{
+	width: 95%;
+	line-height: 25px;
+	text-align: left;
+	padding-left: 10px;
+	border-left: 5px solid #6F984C;
+  margin-top: 20px;
+
+}
+a {
+    color: #08c;
+    text-decoration: none;
+}

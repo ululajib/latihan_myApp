@@ -1,0 +1,145 @@
+body{
+  background:#85e9be;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans;
+
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+.menu{
+  background: #fff;
+  width: 100%;
+  height: 130px;
+}
+img{
+  width: 390px;
+  height: 100px;
+  padding-top: 20px;
+  padding-left: 64px;
+}
+.main{
+  display: table;
+  margin: 30px auto;
+  width: 90%;
+  background-color: #fff;
+  height: auto;
+  margin-bottom: 59px;
+}
+.box{
+  width: 100%;
+  height: 40px;
+}
+.box h2{
+  padding: 10px 10px 10px 10px;
+}
+.abc{
+  width: 380px;
+  height: auto;
+  float: left;
+  margin: 1%;
+}
+input[type=password],
+input[type=text],select
+{
+  width: 92%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: rgba(76, 175, 80, 0.1);
+  padding: 10px;
+  color:#696969;
+  text-shadow: 1px;
+  border-left: 6px solid #6F984C;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+}
+
+/*.op{
+  width: 92%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: rgba(76, 175, 80, 0.1);
+  padding: 10px;
+  color:#696969;
+  text-shadow: 1px;
+  border-left: 6px solid #6F984C;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+}*/
+
+input[type=text]:focus,
+input[type=date]:focus
+{
+  border-left: 6px solid #95eb00;
+  background: rgba(255, 255, 255, 0.75);
+
+}
+input[type=radio]{
+  margin:20px 20px 24px 10px;
+}
+.bux{
+  background-color: #fff;
+  width: 100%;
+  height: 50px;
+	padding-top: 0px;
+  float: left;
+	}
+.bux input[type=submit], #button
+{
+  zoom:1;
+  padding: 6px 10px 6px 10px;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  background-color:  #86c036;
+  font-size: 15px;
+  border-radius: 2px;
+  border: none;
+  margin-left: 10px;
+
+}
+.bux input:hover,#button:hover{
+  background-color: #81fcad;
+  background-image: -webkit-linear-gradient(#91dd70, #55ae2e);
+  background-image: -o-linear-gradient(#91dd70, #55ae2e);
+  background-image: linear-gradient(#91dd70, #55ae2e);
+}
+.bux input:active,#button:active{
+  padding: 5px 9px 5px 9px;
+  background-image: -webkit-linear-gradient(#aaa, #fff, #C1CCAE);
+  background-image: -o-linear-gradient(#aaa, #fff, #C1CCAE);
+  background-image: linear-gradient(#aaa, #fff, #C1CCAE);
+}
+.bax{
+  display: table;
+  margin: 10px auto;
+  padding-right: 10px;
+}
+.footer{
+  background-color: #fff;
+  width: 100%;
+  height: 40px;
+  clear: both;
+  bottom: 0;
+  position: fixed;
+}
+.footer h3{
+  text-align: center;
+  padding-top: 10px;
+}
+.main1{
+  display: none;
+  margin: 30px auto;
+  width: 50%;
+  height: auto;
+}
+.mai{
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+}
+.mai h3{
+  padding-top:30px;
+  text-align: center;
+}

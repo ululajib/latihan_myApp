@@ -1,0 +1,331 @@
+
+/*---menu---*/
+#menu_admin{
+  width: 83%;
+  height: 47px;
+  background-color: #fff;
+  float: right;
+  margin-bottom: 5px;
+}
+
+#menu_main{
+  float:right;
+  width: 15%;
+}
+#mee{
+  margin: -5px auto;
+}
+#mee li{
+  float: left;
+  list-style: none;
+  margin: 10px;
+  padding: 10px;
+}
+#mee a{
+  text-decoration: none;
+  color:  #ace600;
+  font-size: 16px;
+}
+#mee a:hover{
+  color:  #86b300;
+}
+#mee img{
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  margin-top: -10px;
+}
+
+
+.menu_control{
+  width:17%;
+  height: 100%;
+  background-color: #fff;
+  position: fixed;
+}
+.menu_control img{
+  width: 140px;
+  height: 33px;
+  display: table;
+  margin: 10px auto;
+}
+
+/*-----------*/
+/*----search-----*/
+.search{
+  width: 100%;
+  height: 50px;
+  background-image: -webkit-linear-gradient(#f2f2f2, #fff, #f2f2f2);
+  background-image: -o-linear-gradient(#f2f2f2, #fff, #f2f2f2);
+  background-image: linear-gradient(#f2f2f2, #fff, #f2f2f2);
+  display: table;
+}
+.search form{
+  margin: 10px;
+}
+.search img{
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  margin: -4px 0 0 -100px;
+  }
+.search ul{
+  margin-left: 100px;
+  margin-bottom: -12px;
+}
+.search li{
+  text-decoration: none;
+  display:inline;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.search #txt{
+  width: 300px;
+}
+.search input[type=text], .option_search{
+  width: 107px ;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius:4px;
+  font-size: 14px;
+  background-color: white;
+  padding: 5px 0 7px 11px;
+  margin-top: 0px;
+  margin-left:0px;
+}
+.search input[type=submit]{
+  width: auto;
+  height: 32px;
+  font-size: 12px;
+  position:relative;
+  margin-left: -8px;
+}
+/*------------*/
+
+/*++++++++++contain+++++++++++*/
+.contain_a{
+  width: 81%;
+  height: auto;
+  display: table;
+  margin: -530px 237px;
+  position: relative;
+}
+.menu_vertikal{
+  display: table;
+  margin: 20px auto;
+}
+.menu_vertikal a{
+  text-decoration: none;
+  color: black;
+
+}
+.menu_vertikal #pp{
+  height: 86px;
+  margin-bottom: 10px;
+  width: 91px;
+}
+.menu_box{
+  position: fixed;
+  margin: 18px 0px 5px -81px;
+  width: 17%;
+}
+.menu_box li a{
+  margin: 10px 10px 10px 10px;
+  text-decoration: none;
+  height: auto;
+}
+.menu_box li{
+  list-style: none;
+  width: 100%;
+  height: 33px;
+  background-color: aquamarine;
+  margin: 10px;
+}
+.a{
+  padding: 8px;
+  margin: 10px;
+  font-size: 14px;
+  display: block;
+}
+.a:hover{
+  color: #737373;
+}
+/*============================*/
+
+.data_admin table{
+  width: 100%;
+  height: auto;
+  border-collapse: collapse;
+}
+.data_admin td{
+  border: 1px solid #fff;
+  height: 40px;
+  padding-left: 10px;
+  background: #f2f2f2;
+}
+.data_admin .bux{
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+}
+.data_admin .bux input[type=submit]{
+  zoom:1;
+  padding: 6px 10px 6px 10px;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  background-color:  #86c036;
+  font-size: 15px;
+  border-radius: 2px;
+  border: none;
+  margin: 8px -81px 0 84px;
+}
+.data_admin img{
+  margin: 1px auto;
+  display: table;
+}
+/*-----contain table---------*/
+.contain_table{
+  width: 100%;
+  height: auto;
+  background-image: -webkit-linear-gradient(#f2f2f2, #fff, #f2f2f2);
+  background-image: -o-linear-gradient(#f2f2f2, #fff, #f2f2f2);
+  background-image: linear-gradient(#f2f2f2, #fff, #f2f2f2);
+  margin-bottom: 74px;
+}
+.con{
+  width: 100%;
+  height: 30px;
+  background: #a6a6a6;
+  padding: 10px 0px 0px 0px;
+}
+.con h3{
+  text-align: center;
+}
+.contain_table table{
+  width: 100%;
+  height: auto;
+  border-collapse: collapse;
+}
+.contain_table td{
+  border: 1px solid #fff;
+  text-align:left;
+  padding-left: 10px;
+  height: 24px;
+}
+.contain_table th{
+  height: 27px;
+  border: 1px solid #e6e6e6;
+  background-color:  #fff ;
+}
+.contain_table img{
+  width: 23px;
+  height: 23px;
+  margin-right: 10px;
+}
+#td1{
+  background-color: #e6e6e6;
+}
+.ja{
+  display: none;
+}
+/*--------------------------*/
+/*=========table edit=========*/
+.contain_table_edit{
+  width: 100%;
+  height: auto;
+  background-image: -webkit-linear-gradient(#f2f2f2, #fff, #f2f2f2);
+  background-image: -o-linear-gradient(#f2f2f2, #fff, #f2f2f2);
+  background-image: linear-gradient(#f2f2f2, #fff, #f2f2f2);
+}
+.contain_table_edit form{
+  display: table;
+  margin: 20px auto;
+}
+.contain_table_edit input[type=text],select{
+  width: 92%;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  background: rgba(76, 175, 80, 0.1);
+  padding: 10px;
+  color:#696969;
+  text-shadow: 1px;
+  border-left: 6px solid #6F984C;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+}
+.contain_table_edit .bux {
+  width: 100%;
+  height: 50px;
+	padding-top: 0px;
+  float: left;
+}
+.contain_table_edit .bux input[type=submit]{
+  zoom:1;
+  padding: 6px 10px 6px 10px;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  background-color:  #86c036;
+  font-size: 15px;
+  border-radius: 2px;
+  border: none;
+  margin: 8px -81px 0 84px;
+}
+/*============================*/
+/*=========dasboard=========*/
+.dashboard{
+  width: 100%;
+  height: 400px;
+  background-image: -webkit-linear-gradient(#f2f2f2, #fff, #f2f2f2);
+  background-image: -o-linear-gradient(#f2f2f2, #fff, #f2f2f2);
+  background-image: linear-gradient(#f2f2f2, #fff, #f2f2f2);
+}
+.dashboard_a{
+  width: 90%;
+  height: 300px;
+  background-color: #fff;
+  display: table;
+  margin: 30px auto;
+}
+.das_isi{
+  width: 177px;
+  height: 162px;
+  float: left;
+  margin: 1%;
+  background: rgba(76, 175, 80, 0.5);
+}
+h5{
+  text-align: center;
+  margin: 10px;
+}
+.das_isi img{
+  display: table;
+  margin: 20px auto;
+  width: 100px;
+  height: 100px;
+}
+.das_isi span{
+  text-align: center;
+  float: left;
+  background-color: #585a50;
+  width: 40px;
+  height: 30px;
+  padding: 6px 1px 1px 0px;
+  font-size: 22px;
+  border-radius: 0px;
+  position: absolute;
+  margin: -128px 0 0 124px;
+  border-radius: 25px 25px 25px 0px;
+  color: #4af032;
+}
+/*=========================*/
+/*========home ad==============*/
+.contain_home_ad{
+  width: 100%;
+  height: 500px;
+  background: #fff;
+}
+.contain_home_ad img{
+  width: 100%;
+  height: 400px;
+}
+/*===============================*/
