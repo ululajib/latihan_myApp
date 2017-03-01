@@ -1,27 +1,27 @@
 <?php
 // ================regisster============//
-function proses_register_member(){
-  if(isset($_POST['register'])){
-
-    $name     = $_POST['t_nama'];
-    $date     = $_POST['t_date'];
-    $gender   = $_POST['gender'];
-    $email    = $_POST['t_email'];
-    $pass     = $_POST['password'];
-    $country  = $_POST['op_country'];
-    $province = $_POST['op_province'];
-    $city     = $_POST['op_city'];
-    $phone    = $_POST['t_phone'];
-    $addres   = $_POST['t_addres'];
-    $user     = $_POST['op_user'];
-
-    if(register_member($name,$date,$gender,$email,$pass,$phone,$country,$province,$city,$addres,$user)){
-      return true;
-    }else {
-      return false;
-    }
-  }
-}
+// function proses_register_member(){
+//   if(isset($_POST['register'])){
+//
+//     $name     = $_POST['t_nama'];
+//     $date     = $_POST['t_date'];
+//     $gender   = $_POST['gender'];
+//     $email    = $_POST['t_email'];
+//     $pass     = $_POST['password'];
+//     $country  = $_POST['op_country'];
+//     $province = $_POST['op_province'];
+//     $city     = $_POST['op_city'];
+//     $phone    = $_POST['t_phone'];
+//     $addres   = $_POST['t_addres'];
+//     $user     = $_POST['op_user'];
+//
+//     if(register_member($name,$date,$gender,$email,$pass,$phone,$country,$province,$city,$addres,$user)){
+//       return true;
+//     }else {
+//       return false;
+//     }
+//   }
+// }
 // ============================//
 // ===========login-===========//
 function proses_login(){

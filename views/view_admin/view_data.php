@@ -6,9 +6,13 @@
         <li><img src="images/search-icon.png" alt=""></li>
         <li>
           <select class="option_search" name="src1">
-            <option value=''>type user</option>
+            <option value="">type user</option>
             <?php foreach ($type as $value): ?>
-              <option value='<?= $value['id']?>' selected='<?= $value['id']['2'] ?>'><?= $value['nama'] ?></option>
+              <?php  if ($value['nama'] == 'silver') : ?>
+                <option value='<?= $value['id']?>' selected ><?= $value['nama'] ?></option>
+              <?php else: ?>
+                <option value='<?= $value['id']?>'><?= $value['nama'] ?></option>
+              <?php endif ?>
             <?php endforeach ?>
           </select>
         </li>

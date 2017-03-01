@@ -106,16 +106,37 @@ function delete($id){
     }
 }
 
-function register_member($name,$date,$gender,$email,$pass,$phone,$country,$province,$city,$addres,$user){
+// function register_member($name,$date,$gender,$email,$pass,$phone,$country,$province,$city,$addres,$user){
+//   global $con;
+//   $pass = password_hash($pass, PASSWORD_DEFAULT);
+//
+//  $sql = "INSERT INTO `db_users`.`tb_users` (`id`, `full_name`, `birdthday`, `gender`, `email`,  `password`, `number_phone`, `country`, `province`, `city`, `address`, `type_user`, `aktive`)
+//         VALUES (NULL, '$name', '$date', '$gender', '$email', '$pass', '$phone', '$country', '$province', '$city', '$addres', '$user', 1)";
+//
+//             if (mysqli_query( $con, $sql)) {
+//                return true;
+//             }else{
+//               return false;
+//             }
+// }
+// ==========update=========//
+function update($tb_name,$array,$id){
   global $con;
-  $pass = password_hash($pass, PASSWORD_DEFAULT);
 
- $sql = "INSERT INTO `db_users`.`tb_users` (`id`, `full_name`, `birdthday`, `gender`, `email`,  `password`, `number_phone`, `country`, `province`, `city`, `address`, `type_user`, `aktive`)
-        VALUES (NULL, '$name', '$date', '$gender', '$email', '$pass', '$phone', '$country', '$province', '$city', '$addres', '$user', 1)";
-
-            if (mysqli_query( $con, $sql)) {
-               return true;
-            }else{
-              return false;
-            }
+  if(count($array) > 0){
+      foreach ($array as $key => $value) {
+        $value = mysql_real_escape_string($value);
+        $value = "'$value'";
+        $key = "`$key`";
+        $update[] = "$key = $value";
+      }
+  }
+  $implodearray = implode(',', $update);
+  $sql = "UPDATE `db_users`.`$tb_name` SET $implodearray WHERE id = $id";
+  if(mysqli_query($con, $sql)){
+    return true;
+  }else {
+    return false;
+  }
 }
+// =========================//

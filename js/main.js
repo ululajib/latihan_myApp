@@ -191,5 +191,39 @@
 
 
     // ===================//
+    // ===========animation========//
+      $(function(){
+
+      });
+
+      $(function(){
+        $(".main_menu").animate({
+          height: '500px'
+        },2000);
+      });
+
+    // =============================//
+    //========= evex scrol==========//
+    $(function(){
+      $(window).scroll(function() {
+
+          var scroll = $(window).scrollTop();
+
+          if (scroll >= 500) {
+              $(".menu_scroll").css("display","");
+          } else {
+            $(".menu_scroll").css("display","none");
+          }
+          if (scroll >= 500) {
+            $(".moto_img img").animate({
+              width: '100px',
+              height: '90px'
+            },2000);
+          }else {
+        
+          }
+      });
+    });
+    // =============================//
 
   });

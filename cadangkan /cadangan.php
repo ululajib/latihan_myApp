@@ -41,7 +41,7 @@
       // -----
 http://ordodev.com/preview
 https://www.youtube.com/watch?v=63C45soHbmc
-
+http://stackoverflow.com/questions/5250128/updating-mysql-record-with-imploded-array-php
 
 <div class="home">
 	<div class="con">

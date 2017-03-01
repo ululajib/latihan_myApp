@@ -24,11 +24,32 @@ if ($_GET['nav'] == 'index') {
 // =========proses register============
 if ($_GET['nav'] == 'proses_register') {
 
-    if(proses_register_member()){
-      $echo = "BERHASIL";
-    }else {
-      $echo = "GAGAL";
-    }
+
+
+
+  if(isset($_POST['register'])){
+
+    $name     = $_POST['t_nama'];
+    $date     = $_POST['t_date'];
+    $gender   = $_POST['gender'];
+    $email    = $_POST['t_email'];
+    $pass     = $_POST['password'];
+    $country  = $_POST['op_country'];
+    $province = $_POST['op_province'];
+    $city     = $_POST['op_city'];
+    $phone    = $_POST['t_phone'];
+    $addres   = $_POST['t_addres'];
+    $user     = $_POST['op_user'];
+
+    $sql = "INSERT INTO `db_users`.`tb_users` (`id`, `full_name`, `birdthday`, `gender`, `email`,  `password`, `number_phone`, `country`, `province`, `city`, `address`, `type_user`, `aktive`)
+           VALUES (NULL, '$name', '$date', '$gender', '$email', '$pass', '$phone', '$country', '$province', '$city', '$addres', '$user', 1)";
+
+   if (mysqli_query( $con, $sql)) {
+     $echo = "BERHASIL";
+   }else {
+     $echo = "GAGAL";
+   }
+  }
     if(require('views/register.php')){
       ?>
       <script>
@@ -137,20 +158,22 @@ if (isset($_POST['update'])) {
   $phone    = $_POST['t_phone'];
   $t_type     = $_POST['op_user'];
 
-  $sql = "UPDATE `db_users`.`tb_users`
-  SET `full_name` = '$name', `number_phone` = '$phone', `address` = '$addres', `type_user` = '$t_type'
-  WHERE `tb_users`.`id` = $id";
+  $tb_name = "tb_users";
+      $array = [
+                'full_name' => $name,
+                'address' => $addres,
+                'number_phone' => $phone,
+                'type_user' => $t_type
+              ];
 
-  if (mysqli_query($con, $sql)) {
-
+if (update($tb_name,$array, $id)) {
     header('location:'.BASE_URL.'?nav=home_admin_member');
-
   }else {
-    return false;
   }
 }elseif(isset($_POST['cencel'])) {
   header('location:'.BASE_URL.'?nav=home_admin_member');
 }
+
 if ($_GET['nav']=='edit') {
     $id = $_GET['id'];
     $data = getFromDB("SELECT * FROM tb_users WHERE id = '$id'");
@@ -196,7 +219,7 @@ if ($_GET['nav'] == 'logout') {
 // =================================//
 // =============home=============//
 if ($_GET['nav']=='home_ad') {
-  
+
   require('views/home_admin.php');
 }
 // ================================//
